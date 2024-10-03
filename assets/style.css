@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color : #3fbabf;
+  --section-color: #f7fdfd;
+}
+
+/* start sub-nav */
+.sub-nav {
+  background-color: var(--main-color);
+}
+/* end sub-nav */
+
+/* start nav */
+.navbar-brand {
+  width: 9rem;
+}
+
+.navbar .navbar-nav .nav-item .active,
+.navbar .navbar-nav .nav-link:hover,
+.department ul .active {
+  color: var(--main-color);
+}
+
+button {
+  background-color: var(--main-color);
+}
+
+button:hover {
+  background-color: #3fbbbfcc;
+}
+/* end nav */
+
+/* start hero */
+.carousel-inner {
+  height: calc( 100vh - 105px );
+}
+
+.img-holder {
+  height: 90vh;
+}
+.carousel-caption {
+  border-top: 7px solid var(--main-color);
+  bottom: 12rem;
+}
+/* end hero */
+
+/* start service */
+.line h2::before,
+.card-title::before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: var(--main-color);
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.service i, .contact i {
+  color: var(--main-color);
+  transition: all 0.4s;
+}
+
+.service i:hover, .contact i:hover {
+  transform: scale(1.2);
+}
+/* end service */
+
+/* start appointment */
+.appointment, .questions, footer {
+  background-color: var(--section-color);
+}
+/* end appointment */
+
+/* start department */
+.department ul .nav-item .active::before { 
+  content: "";
+  width: 3px;
+  height: 25px;
+  background: var(--main-color);
+  position: absolute;
+  right: 0;
+}
+
+.department ul .nav-item .nav-link:not(.active) {
+  color: black;
+}
+
+.department ul .nav-item .nav-link:hover {
+  color: var(--main-color);
+} 
+/* end department */
+
+/* start contact */
+.contact i {
+  border: 2px dotted var(--main-color) ;
+}
+
+.contact a {
+  color: var(--main-color);
+}
+
+.contact a:hover {
+  color: #3fbbbfcc;
+}
+/* end contact */
+
+/* start footer */
+footer ul li {
+  font-size: 0.8rem;
+}
+
+footer .copyright div span {
+  color: var(--main-color);
+}
+
+footer .icons {
+  width: 12rem;
+}
+
+.social-links {
+  width: 20px;
+  height: 20px;
+}
+/* end footer */
