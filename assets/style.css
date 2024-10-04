@@ -115,7 +115,7 @@ footer ul li {
   font-size: 0.8rem;
 }
 
-footer .copyright div span {
+footer .copyright div a {
   color: var(--main-color);
 }
 
